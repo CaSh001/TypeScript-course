@@ -166,3 +166,14 @@ strings.forEach(s => {
 });
 ```
 
+### Declaration Files
+
+* _declare_ kulcsszó. Leír máshol létező codeot. Pl.:
+```ts
+ class="language-TypeScript">mynumber = 200; // Error: mynumber is not defined
+
+//while
+
+declare var mynumber: any;
+mynumber = 200; // ok
+```
