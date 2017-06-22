@@ -25,6 +25,9 @@ git add <filename> //fájl hozzáadása a rep-hez.
 git commit -m "üzenet" //változtatások elfogadása
 git push <URL> <branch> //feltöltés hub-ra.
 git pull //frissítések letöltése a hub-ról.
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR EMAIL ADDRESS"
+
 ```
 
 
