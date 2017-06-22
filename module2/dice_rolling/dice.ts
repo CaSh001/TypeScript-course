@@ -17,27 +17,31 @@ interface DieSet{
     text:Element;
 }
 
-class Die {
-    diesize:string="100px";
-    dieborder:string="3px solid black";
-    throw:string;
-    dietext:string;
-constructor(diethrow){
-    this.throw = diethrow;
-}
+class Die implements DieSet{
+    div;
+    text;
+    constructor(div, text){
+        this.div = div;
+        this.text = text;
+    (this.div as HTMLElement).style.width = "50px";
+    (this.div as HTMLElement).style.height = "50px";
+    (this.div as HTMLElement).style.margin = "10px";
+    (this.div as HTMLElement).style.border = "2px solid black";}
 }
 
 
 class DieRoller extends Die {
-constructor(diethrow){
-    super(diethrow);
-}
+constructor(div, text){
+    super(div, text);
+    text.innerHTML = possible_throws[GetRandom(0,5)];}
 }
 
 let button: Element;
 button = document.createElement("button");
 button.textContent = "Roll it!";
 document.body.appendChild(button);
+
+
 
 
 let ArrayDice: Array<DieSet> = [];
@@ -47,6 +51,16 @@ for (let i:number = 0; i < 4; i++){
         'text': document.createElement("p")
     })
     ArrayDice[i].text.innerHTML = possible_throws[GetRandom(0,5)];
+    ArrayDice[i] = new Die(ArrayDice[i].div, ArrayDice[i].text);
     document.body.appendChild(ArrayDice[i].div);
     document.body.lastChild.appendChild(ArrayDice[i].text);
 }
+
+(button as HTMLElement).onclick = (event) => { 
+    ArrayDice.map((elem, index) => { 
+        elem.text.innerHTML = possible_throws[GetRandom(0,5)];
+    }) 
+
+}
+
+    

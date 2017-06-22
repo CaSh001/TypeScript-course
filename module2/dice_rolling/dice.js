@@ -26,8 +26,9 @@ var Die = (function () {
     function Die(div, text) {
         this.div = div;
         this.text = text;
-        this.div.style.width = "100px";
-        this.div.style.height = "100px";
+        this.div.style.width = "50px";
+        this.div.style.height = "50px";
+        this.div.style.margin = "10px";
         this.div.style.border = "2px solid black";
     }
     return Die;
@@ -35,7 +36,9 @@ var Die = (function () {
 var DieRoller = (function (_super) {
     __extends(DieRoller, _super);
     function DieRoller(div, text) {
-        return _super.call(this, div, text) || this;
+        var _this = _super.call(this, div, text) || this;
+        text.innerHTML = possible_throws[GetRandom(0, 5)];
+        return _this;
     }
     return DieRoller;
 }(Die));
@@ -54,3 +57,8 @@ for (var i = 0; i < 4; i++) {
     document.body.appendChild(ArrayDice[i].div);
     document.body.lastChild.appendChild(ArrayDice[i].text);
 }
+button.onclick = function (event) {
+    ArrayDice.map(function (elem, index) {
+        elem.text.innerHTML = possible_throws[GetRandom(0, 5)];
+    });
+};
