@@ -23,17 +23,19 @@ var GetRandom = function (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 var Die = (function () {
-    function Die(diethrow) {
-        this.diesize = "100px";
-        this.dieborder = "3px solid black";
-        this["throw"] = diethrow;
+    function Die(div, text) {
+        this.div = div;
+        this.text = text;
+        this.div.style.width = "100px";
+        this.div.style.height = "100px";
+        this.div.style.border = "2px solid black";
     }
     return Die;
 }());
 var DieRoller = (function (_super) {
     __extends(DieRoller, _super);
-    function DieRoller(diethrow) {
-        return _super.call(this, diethrow) || this;
+    function DieRoller(div, text) {
+        return _super.call(this, div, text) || this;
     }
     return DieRoller;
 }(Die));
@@ -48,6 +50,7 @@ for (var i = 0; i < 4; i++) {
         'text': document.createElement("p")
     });
     ArrayDice[i].text.innerHTML = possible_throws[GetRandom(0, 5)];
+    ArrayDice[i] = new Die(ArrayDice[i].div, ArrayDice[i].text);
     document.body.appendChild(ArrayDice[i].div);
     document.body.lastChild.appendChild(ArrayDice[i].text);
 }
