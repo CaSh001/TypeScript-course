@@ -5,5 +5,5 @@ próba project 1
 - [x] VScode Git support
 - [ ] branch használatot átnézni
 - [ ] próbák és jegyzeteik feltöltése
-- [ ] markdown elsajátítása
+- [x] markdown elsajátítása
 
