@@ -30,7 +30,7 @@ class Die implements DieSet{
 }
 
 
-class DieRoller extends Die {
+class DieRoller extends Die { //nem használt ;_;
 constructor(div, text){
     super(div, text);
     text.innerHTML = possible_throws[GetRandom(0,5)];}
