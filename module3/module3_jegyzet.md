@@ -177,3 +177,4 @@ strings.forEach(s => {
 declare var mynumber: any;
 mynumber = 200; // ok
 ```
+
