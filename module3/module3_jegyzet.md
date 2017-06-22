@@ -195,3 +195,12 @@ declare module Something {
     * declaration implementation nélkül, általában .d.ts fájlban
         * olyan mint C/C++-ban a .h fájl
 
+
+* importálás pl _import url = require("url"); or import * as URL from "url"._
+
+```ts
+/// <reference path="node.d.ts"/>
+import * as URL from "url";
+let myUrl = URL.parse("http://www.typescriptlang.org");
+
+```
