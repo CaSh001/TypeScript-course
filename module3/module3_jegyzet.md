@@ -129,6 +129,7 @@ import $ from "JQuery";
 $("button.continue").html( "Next Step..." );
 ```
 
+* Lehet közvetlen default exportként deklarálni class-t és function-t is. Ez opcionális.
 ```ts
 //ZipCodeValidator.ts
 
@@ -164,3 +165,4 @@ strings.forEach(s => {
   console.log(`"${s}" ${validate(s) ? " matches" : " does not match"}`);
 });
 ```
+
