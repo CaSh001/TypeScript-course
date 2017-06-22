@@ -1,4 +1,22 @@
-### Modul 2 - Lab feladat jegyzetek
+## Modul 2
+
+* indexelni lehet akár stringgel is.
+
+* interface tud extendelni class-t
+
+* két metódus összehasonlításánál ugyanazok a típusok kellenek, nevek nem számítanak:
+```
+let x = (a: number) => 0;
+let y = (b: number, s: string) => 0;
+
+y = x; // OK
+x = y; // Error
+```
+
+### Arguments
+* Opcionális argumentek mindig később jönnek.
+    * *...változo[]*-val végtelent lehet átadni.
+* Defualt argumentek jöhetnek akármikor, de ha nem akarjuk felülírni, undefined-ot kell átadni.
 
 #### _1. Feladat_
 * Cél: gomb megnyomására a div színt vált
