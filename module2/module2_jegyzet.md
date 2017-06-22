@@ -5,7 +5,7 @@
 * interface tud extendelni class-t
 
 * két metódus összehasonlításánál ugyanazok a típusok kellenek, nevek nem számítanak:
-```
+```ts
 let x = (a: number) => 0;
 let y = (b: number, s: string) => 0;
 
