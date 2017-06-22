@@ -14,7 +14,7 @@
 
 ### Parancsok
 
--Parancsok teljes listája [itt](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html).
+-Parancsok bővebb listája [itt](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html).
 
 -Alapparancsok röviden:
 
@@ -40,19 +40,19 @@ git config --global user.email "YOUR EMAIL ADDRESS"
 Letöltjük a rep-et, változtatunk/új fájlokat adunk hozzá, és feltöltjük a változtatásainkat.
 ```
 C:\Users\jgulyas>git clone https://github.com/CaSh001/test1.git //letöltés után változtatunk/hozzáadunk
+C:\Users\jgulyas\test1>git add -A //hozzáadjuk a rep-hez az összes mappában/almappában található fájlt.
 C:\Users\jgulyas\test1>git status //ezzel láthatjuk a változásokat
-C:\Users\jgulyas\test1>git add -A //hozzáadjuk a rep-hez az összes mappában található fájlt.
-C:\Users\jgulyas\test1>git commit -m "weboldal title átírva"
+C:\Users\jgulyas\test1>git commit -m "változtattam és új fájlt adtam hozzá" //lehetőleg beszédes üzenetet adjunk
 C:\Users\jgulyas\test1>git push
 ```
 
 
 ## Desktop applikációs megoldáshoz:
-
 -Töltsük le a [GitHub Desktop](https://desktop.github.com/) programot.
 
 
 ## Visual Studio Code-ban használat:
--"_Clone Git Repository_"-re kattintva másoljuk le a projectünket.
--Bal oldalt source control menüben tudjuk stage-elni vagy elutasítani a változtatásokat.
--A __...__-ra kattintva kiválaszthatjuk a push-olást a változtatásaink feltöltéséhez, a pull-olást a változtatások letöltöséhéez, szinkronizálhatunk stb.
+* "_Clone Git Repository_"-re kattintva másoljuk le a projectünket.
+* Végezzük el változtatásainkat, majd mentsük el őket.
+* Bal oldalt a _source control_ menüben tudjuk elfogadni vagy elutasítani a változtatásokat. A 'pipa' jelre kattintva minden változtatást elfogadunk.
+* A __...__-ra kattintva kiválaszthatjuk a push-olást a változtatásaink feltöltéséhez, a pull-olást a változtatások letöltöséhéez, vagy szinkronizálhatunk stb.
