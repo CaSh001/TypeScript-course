@@ -50,17 +50,18 @@ for (let i:number = 0; i < 4; i++){
         'div': document.createElement("div"),
         'text': document.createElement("p")
     })
-    ArrayDice[i].text.innerHTML = possible_throws[GetRandom(0,5)];
-    ArrayDice[i] = new Die(ArrayDice[i].div, ArrayDice[i].text);
-    document.body.appendChild(ArrayDice[i].div);
-    document.body.lastChild.appendChild(ArrayDice[i].text);
-}
 
-(button as HTMLElement).onclick = (event) => { 
+
     ArrayDice.map((elem, index) => { 
-        elem.text.innerHTML = possible_throws[GetRandom(0,5)];
-    }) 
+    elem.text.innerHTML = possible_throws[GetRandom(0,5)];
+    elem.text.innerHTML = possible_throws[GetRandom(0,5)];
+    elem = new Die(ArrayDice[i].div, ArrayDice[i].text);
+    document.body.appendChild(elem.div);
+    document.body.lastChild.appendChild(elem.text);
+})}
 
-}
-
+(button as HTMLElement).onclick = (event) => {
+    ArrayDice.map((elem, index) => { 
+    elem.text.innerHTML = possible_throws[GetRandom(0,5)];
+})}
     

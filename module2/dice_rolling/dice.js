@@ -47,15 +47,21 @@ button = document.createElement("button");
 button.textContent = "Roll it!";
 document.body.appendChild(button);
 var ArrayDice = [];
-for (var i = 0; i < 4; i++) {
+var _loop_1 = function (i) {
     ArrayDice.push({
         'div': document.createElement("div"),
         'text': document.createElement("p")
     });
-    ArrayDice[i].text.innerHTML = possible_throws[GetRandom(0, 5)];
-    ArrayDice[i] = new Die(ArrayDice[i].div, ArrayDice[i].text);
-    document.body.appendChild(ArrayDice[i].div);
-    document.body.lastChild.appendChild(ArrayDice[i].text);
+    ArrayDice.map(function (elem, index) {
+        elem.text.innerHTML = possible_throws[GetRandom(0, 5)];
+        elem.text.innerHTML = possible_throws[GetRandom(0, 5)];
+        elem = new Die(ArrayDice[i].div, ArrayDice[i].text);
+        document.body.appendChild(elem.div);
+        document.body.lastChild.appendChild(elem.text);
+    });
+};
+for (var i = 0; i < 4; i++) {
+    _loop_1(i);
 }
 button.onclick = function (event) {
     ArrayDice.map(function (elem, index) {
