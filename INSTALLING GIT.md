@@ -53,4 +53,6 @@ C:\Users\jgulyas\test1>git push
 
 
 ## Visual Studio Code-ban használat:
--
+-"_Clone Git Repository_"-re kattintva másoljuk le a projectünket.
+-Bal oldalt source control menüben tudjuk stage-elni vagy elutasítani a változtatásokat.
+-A __...__-ra kattintva kiválaszthatjuk a push-olást a változtatásaink feltöltéséhez, a pull-olást a változtatások letöltöséhéez, szinkronizálhatunk stb.
