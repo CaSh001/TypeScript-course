@@ -168,7 +168,7 @@ strings.forEach(s => {
 
 ### Declaration Files
 
-* _declare_ kulcsszó. Leír máshol létező codeot. Pl.:
+* _declare_ kulcsszó. Leír máshol létező codeot (mondjuk JavaScript-ben, CoffeScript-ben vagy nodejs-ben írt). Pl.:
 ```ts
  class="language-TypeScript">mynumber = 200; // Error: mynumber is not defined
 
@@ -177,4 +177,21 @@ strings.forEach(s => {
 declare var mynumber: any;
 mynumber = 200; // ok
 ```
+
+* _.d.t.s_ kiterjesztésű fájlok a __deklaráció fájlok__.
+
+* .d.ts fájlba csak TypeScript lehet. Nem lehet semmi ami javascriptet generálna.
+    * interfacek engedélyezettek.
+    * const enum is engedélyezett.
+    * osztályok, változok, modulok és funkciók elé kell a _declare_.
+
+    ```ts
+declare module Something {
+    var x;
+}
+    ```
+
+### Ambient modul
+    * declaration implementation nélkül, általában .d.ts fájlban
+        * olyan mint C/C++-ban a .h fájl
 
