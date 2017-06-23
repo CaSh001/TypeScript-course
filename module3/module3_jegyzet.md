@@ -24,7 +24,7 @@ import InternalSpace = SomeNameSpace.internalNameSpace;
     ```ts
     let lizard = new Zoo.Reptile();
     ```
- * importálás: *import q = x.y.z*, gyakran használt objektumokhoz.
+ * importálás: Alias/rövid névhez: *import q = x.y.z*, gyakran használt objektumokhoz.
     ```ts
     import rep = Zoo.Reptile;
     let lizard: rep;
