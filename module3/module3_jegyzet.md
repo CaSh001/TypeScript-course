@@ -191,11 +191,10 @@ mynumber = 200; // ok
     * const enum is engedélyezett.
     * osztályok, változok, modulok és funkciók elé kell a _declare_.
 
-    ```ts
+```ts
 declare module Something {
-    var x;
-}
-    ```
+    var x;}
+```
 
 ### Ambient modul
     * declaration implementation nélkül, általában .d.ts fájlban
@@ -274,4 +273,12 @@ app.listen(3000, function() { //3000 a portszám
 * Moduloknál a classokban nem kell _export_-ot vagy _function_-t kiírni.
 
 * Modul importálásnál ne feledd __.js__-ként hivatkozni rá, .ts helyett.
+
+* SystemJS modul loadert használunk, amit CDNJS-ről töltünk be. Nyilván lehetne letölteni is és úgy linkelni.
+    ```html
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.12/system.js"></script>
+    <script>
+    SystemJS.import('main.js')
+    </script>
+    ```
 
