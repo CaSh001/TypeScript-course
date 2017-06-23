@@ -1,5 +1,12 @@
-tsc compiler parancsok
+## tsc compiler parancsok
 
-* tsc --... <.ts fájl> <kimeneti .js fájl átnevezése>
+* Példák:
+```
+    tsc hello.ts
+    tsc --outFile file.js file.ts
+    tsc @args.txt
+```
+
+* tsc --... <kimeneti .js fájl átnevezése> <.ts fájl> 
     * --declare
     * --outFile (pl namespace-hez, refferenciáknál, hogy minden fájlt egybe tegyen)
