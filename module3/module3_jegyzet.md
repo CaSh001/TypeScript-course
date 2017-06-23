@@ -209,3 +209,8 @@ declare module Something {
 import * as URL from "url";
 let myUrl = URL.parse("http://www.typescriptlang.org");
 ```
+
+### Feladatok
+
+#### _1. Feladat_
+* 
