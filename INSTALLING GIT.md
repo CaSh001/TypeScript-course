@@ -18,21 +18,16 @@
 
 -Alapparancsok röviden:
 
-```
-git clone <URL> //Rep letöltése GitHub-ról.
-git status //státusz megnézése - változtatott fájlok, új fájlok stb.
-git add <filename> //fájl hozzáadása a rep-hez.
-git commit -m "üzenet" //változtatások elfogadása
-git push <URL> <branch> //feltöltés hub-ra.
-git pull //frissítések letöltése a hub-ról.
-git config --global user.name "YOUR NAME"
-git config --global user.email "YOUR EMAIL ADDRESS"
-
-```
-
-
-
-
+Parancs | Leírás
+--------|--------
+git clone <URL>  | Rep letöltése GitHub-ról.
+git status | státusz megnézése - változtatott fájlok, új fájlok stb.
+git add <filename> | fájl hozzáadása a rep-hez.
+git commit -m "üzenet" | változtatások elfogadása
+git push <URL> <branch> | feltöltés hub-ra.
+git pull | frissítések letöltése a hub-ról.
+git config --global user.name "YOUR NAME" | név beállítása
+git config --global user.email "YOUR EMAIL ADDRESS" | e-mail beállítása
 
 
 #### Parancsok példa 1

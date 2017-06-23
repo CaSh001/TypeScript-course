@@ -1,7 +1,13 @@
 ## Module 3
 
 ### Namespace
-* namespacen belül eltérő nevek kellenek
+* namespacen belül eltérő nevek kellenek.
+* lehet egy namespace másikon belül.
+    * lehet egyszerűsíteni pl.:
+```ts
+import InternalSpace = SomeNameSpace.internalNameSpace;
+```
+
 * lehet több fájlon át 
     * pl egyik fájlba
     ```ts
@@ -202,5 +208,4 @@ declare module Something {
 /// <reference path="node.d.ts"/>
 import * as URL from "url";
 let myUrl = URL.parse("http://www.typescriptlang.org");
-
 ```
