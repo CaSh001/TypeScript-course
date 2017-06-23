@@ -273,4 +273,5 @@ app.listen(3000, function() { //3000 a portszám
 
 * Moduloknál a classokban nem kell _export_-ot vagy _function_-t kiírni.
 
-* 
+* Modul importálásnál ne feledd __.js__-ként hivatkozni rá, .ts helyett.
+
