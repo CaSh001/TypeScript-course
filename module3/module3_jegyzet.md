@@ -213,4 +213,35 @@ let myUrl = URL.parse("http://www.typescriptlang.org");
 ### Feladatok
 
 #### _1. Feladat_
-* 
+
+
+* Array visszafele:
+
+```ts
+export function reverseArray(array: Array<number>) {
+        return array.slice(0).reverse();
+    } 
+```
+
+* Első eleme:
+
+
+```ts
+    export function lastItemOfArray(array: Array<number>) {
+        return array.slice(0).pop();
+
+```
+
+* Utolsó eleme:
+```ts
+      export function firstItemOfArray(array: Array<number>) {
+        return array.slice(0).shift();
+    }
+```
+
+* Két arrayt contentrate:
+```ts
+    export function concatenateArray(array1: Array<number>, array2: Array<number>) {
+        return array1.concat(array2);
+    }
+```
