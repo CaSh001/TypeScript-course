@@ -1,4 +1,4 @@
-# test1
+# TypeScript course 
 próba project 1
 
 - [x] pull/push, clone, status, add, commit, :wq parancsok
