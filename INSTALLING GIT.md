@@ -4,7 +4,7 @@
 
 -[**GitHub**](https://github.com/) account szükséges.
 
--Készíthetünk saját repository-t (rep-et). README-vel ajánlott.
+-Készíthetünk saját repository-t (repo-t). README-vel ajánlott.
 
 -GitHub használata lehetséges _parancssorral_ vagy a _Desktop_ applikációval.
 
@@ -20,9 +20,9 @@
 
 Parancs | Leírás
 --------|--------
-git clone <URL>  | Rep letöltése GitHub-ról.
+git clone <URL>  | Repo letöltése GitHub-ról.
 git status | státusz megnézése - változtatott fájlok, új fájlok stb.
-git add <filename> | fájl hozzáadása a rep-hez.
+git add <filename> | fájl hozzáadása a repo-hoz.
 git commit -m "üzenet" | változtatások elfogadása
 git push <URL> <branch> | feltöltés hub-ra.
 git pull | frissítések letöltése a hub-ról.
@@ -32,10 +32,10 @@ git config --global user.email "YOUR EMAIL ADDRESS" | e-mail beállítása
 
 #### Parancsok példa 1
 
-Letöltjük a rep-et, változtatunk/új fájlokat adunk hozzá, és feltöltjük a változtatásainkat.
+Letöltjük a repo-t, változtatunk/új fájlokat adunk hozzá, és feltöltjük a változtatásainkat.
 ```
 C:\Users\jgulyas>git clone https://github.com/CaSh001/test1.git //letöltés után változtatunk/hozzáadunk
-C:\Users\jgulyas\test1>git add -A //hozzáadjuk a rep-hez az összes mappában/almappában található fájlt.
+C:\Users\jgulyas\test1>git add -A //hozzáadjuk a repo-hoz az összes mappában/almappában található fájlt.
 C:\Users\jgulyas\test1>git status //ezzel láthatjuk a változásokat
 C:\Users\jgulyas\test1>git commit -m "változtattam és új fájlt adtam hozzá" //lehetőleg beszédes üzenetet adjunk
 C:\Users\jgulyas\test1>git push

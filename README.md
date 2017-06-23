@@ -9,5 +9,5 @@ próba project 1
     * - [x] Modul 2
     * - [ ] Modul 3
     * - [ ] Modul 4
+- [ ] Final Exam
 - [x] markdown elsajátítása
-
