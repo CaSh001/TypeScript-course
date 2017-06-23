@@ -238,7 +238,7 @@ export function reverseArray(array: Array<number>) {
     }
 ```
 
-* Két arrayt contentrate:
+* Két arrayt concatenatel:
 ```ts
     export function concatenateArray(array1: Array<number>, array2: Array<number>) {
         return array1.concat(array2);
