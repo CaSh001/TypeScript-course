@@ -35,7 +35,7 @@ git config --global user.email "YOUR EMAIL ADDRESS"
 
 
 
-### Parancsok példa 1
+#### Parancsok példa 1
 
 Letöltjük a rep-et, változtatunk/új fájlokat adunk hozzá, és feltöltjük a változtatásainkat.
 ```
