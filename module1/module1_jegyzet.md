@@ -2,5 +2,4 @@ tsc compiler parancsok
 
 * tsc --... <.ts fájl> <kimeneti .js fájl átnevezése>
     * --declare
-    * --outfile (pl namespace-hez)
-    * --outFile
+    * --outFile (pl namespace-hez, refferenciáknál, hogy minden fájlt egybe tegyen)
