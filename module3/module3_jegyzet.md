@@ -245,3 +245,32 @@ export function reverseArray(array: Array<number>) {
         return array1.concat(array2);
     }
 ```
+
+#### _2. Feladat_
+
+*  Class-okat ajánlott használni containereknek modulokban.
+
+* Express installáció: _npm install express_
+
+* server.js
+
+```JavaScript
+var path = require('path');
+var express = require('express');
+
+var app = express();
+
+var staticPath = path.join(__dirname, '/');
+app.use(express.static(staticPath));
+
+app.listen(3000, function() { //3000 a portszám
+  console.log('listening');
+});
+```
+
+* Futtatás: _node server.js_
+    * _localhost:3000_ //ipv4cím:port
+
+* Moduloknál a classokban nem kell _export_-ot vagy _function_-t kiírni.
+
+* 
